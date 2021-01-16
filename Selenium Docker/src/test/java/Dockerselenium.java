@@ -49,7 +49,10 @@ cp.setCapability(CapabilityType.BROWSER_NAME,BrowserType.CHROME);
         driver.manage().window().maximize();
         System.out.println("Title is "+driver.getTitle());
 
-
+        new Actions(driver).sendKeys(Keys.ESCAPE).build().perform();
+        driver.findElement(By.name("q")).click();
+        driver.findElement(By.name("q")).sendKeys(searchString);
+        driver.findElement(By.xpath(searchButton)).click();
     }
 
 
