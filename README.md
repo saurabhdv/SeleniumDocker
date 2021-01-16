@@ -21,3 +21,5 @@ I prefer using #Zalenium Images which works well for grid and Kubernetes support
       --privileged dosel/zalenium start
       
     # Point your tests to http://localhost:4444/wd/hub and run them - here in my case i ad it running in VM so i access as  http://192.168.80.134:4444/wd/hub & http://192.168.80.134:4444/dashboard/#
+    
+to view live test run USE http://localhost:4444/grid/admin/live
